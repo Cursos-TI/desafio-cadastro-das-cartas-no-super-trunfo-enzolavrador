@@ -1,12 +1,12 @@
 #include <stdio.h>
-
+//TRABALHO DO NIVEL NOVATO!!!!!!!!!!
 int main() {
     char nome[15];
-//As regras do jogo sao informadas apos o jogador inserir seu nome.
+//Algumas informacoes aparecem instantaneamente apos usar a funcao 'printf'.
+//As regras do jogo sao informadas apos o jogador inserir seu nome atraves do comando 'scanf'.
     char regras[500]="Regras basicas do Super Trunfo:\n 1. Cada jogador tem uma carta com: Codigo, estado, nome da cidade, populacao, area, PIB e numero de pontos turisticos.\n 2. O jogo comeca com um jogador escolhendo uma categoria.\n 3. O outro jogador deve escolher a mesma categoria.\n 4. O jogador com o maior valor na categoria ganha a rodada.\n 5. O jogo continua ate que um jogador fique sem cartas.\n 6. O jogador que ficar com todas as cartas vence o jogo.";
     printf("==Bem-vindo ao Super Trunfo==\n""\n");
-   
-   
+ //Utilizo '"\n""\n"'(duas vezes consecutivas) para dar um espacamento de linhas melhor, evitando que fique confuso algumas informacoes.  
     printf("Para comecar, digite seu nome: ");
 
     scanf("%s",nome);
@@ -14,7 +14,7 @@ int main() {
     printf("Vamos nessa, %s!\n""\n",nome);
 
     printf("%s\n""\n", regras);
-//As cartas sao apresentadas aos jogadores.
+//As cartas sao apresentadas aos jogadores usando variaveis que guardam informacoes, sendo elas caracteres, numeros inteiros e numeros nao inteiros.
 printf("CARTA 1 \n Codigo: A1 \n Estado: SP \n Nome da Cidade: Sao Paulo \n Populacao: 12.252.023 \n Area: 1.521 km2 \n PIB: R$ 699.33 bilhoes \n Numero de Pontos Turisticos: 29\n""\n");
     char codigo1[4]="A1";
     char estado1[4]="SP";
